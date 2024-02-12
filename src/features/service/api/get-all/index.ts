@@ -1,4 +1,5 @@
-import { Branch, Tree } from '@/components/tree'
+import { Branch } from '@/components/branch'
+import { Tree } from '@/components/tree'
 import { getServicesResponseMock } from './mock'
 
 export interface Service {
