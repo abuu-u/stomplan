@@ -5,7 +5,7 @@ export default async function Home() {
   const tree = selectServicesTree(await getAll())
 
   return (
-    <main className="">
+    <main>
       <Tree tree={tree} />
     </main>
   )
