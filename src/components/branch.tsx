@@ -17,7 +17,7 @@ const Branch: FC<Properties> = ({ branch: { name, sub } }) => {
   const haveSub = sub.length > 0
 
   return (
-    <li className={`pl-9 ${open && 'h-[43px] overflow-hidden'}`}>
+    <li className={`pl-11 ${open && 'h-[43px] overflow-hidden'}`}>
       <p className="relative flex items-center py-2 [&>*]:flex-shrink-0">
         {haveSub && (
           <button
