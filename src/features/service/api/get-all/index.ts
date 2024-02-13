@@ -100,8 +100,10 @@ const serviceToBranchWithSortHead = ({
   sub: [],
 })
 
-const deepSort = <T extends { sub: T[] }>(data: T): T => {
-  for (const it of data.sub.sort()) {
+const deepSort = <T extends { sub: (T & { sorthead: number })[] }>(
+  data: T,
+): T => {
+  for (const it of data.sub.sort((a, b) => a.sorthead - b.sorthead)) {
     deepSort(it)
   }
 
